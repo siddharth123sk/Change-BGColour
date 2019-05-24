@@ -7,7 +7,7 @@ chrome.runtime.onInstalled.addListener(function() {
   chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
     chrome.declarativeContent.onPageChanged.addRules([{
       conditions: [new chrome.declarativeContent.PageStateMatcher({
-        pageUrl: {hostEquals: 'https://www.facebook.com'},
+        pageUrl: {hostEquals: 'https://www.facebook.com'}, //Write the URL of your favorite website here!
         pageUrl: {hostEquals: 'www.facebook.com'},
 		
       })],
